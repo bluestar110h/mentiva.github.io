@@ -34,15 +34,25 @@
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
 	<style>
-    body, h1, h2, h3, h4, p, a, .nav-link, .btn-default {
-        font-family: 'Vazirmatn', 'Sora', sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+    
+    * {
+        font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif !important;
     }
+    
+    body, h1, h2, h3, h4, h5, h6, p, a, span, div, li, button, input, textarea, select, .nav-link, .btn-default, .hero-content h1, .section-title h2 {
+        font-family: 'Vazirmatn', 'Segoe UI', Tahoma, sans-serif !important;
+    }
+    
     body {
         text-align: right;
+        font-family: 'Vazirmatn', sans-serif !important;
     }
+    
     .navbar-nav, .hero-list ul, .footer-menu ul {
         padding-right: 0;
     }
+    
     .navbar-nav .nav-item {
         margin-left: 20px;
         margin-right: 0;
