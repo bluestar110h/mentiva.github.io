@@ -193,10 +193,6 @@
                             <a href="book-appointment.html" class="btn-default">دریافت نوبت</a>
                         </div>
                         <!-- Header Btn End -->
-                        <div class="header-btn d-inline-flex">
-                            <a href="book-appointment.html" class="btn-default">book an appointment</a>
-                        </div>
-                        <!-- Header Btn End -->
 					</div>
 					<!-- Main Menu End -->
 					<div class="navbar-toggle"></div>
@@ -217,7 +213,7 @@
 						<h1>نوبت رزرو کنید</h1>
 						<nav class="wow fadeInUp">
 							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="index.html">خانه</a></li>
+								<li class="breadcrumb-item"><a href="index.html"><br>خانه</a></li>
 								<li class="breadcrumb-item active" aria-current="page">رزرو نوبت</li>
 							</ol>
 						</nav>
@@ -229,12 +225,64 @@
 	</div>
 	<!-- Page Header End -->
 
-    <!-- Page Appointment Start -->
-    <div class="page-book-appointment">
-        <div class="container">
+<!-- Our Appointment Box Start -->
+<div class="our-appointment-box">
+    <!-- Appointment Form Start -->
+    <div class="appointment-form">
+        <!-- Contact Us Form Start -->
+        <form action="https://formspree.io/f/mrejnjbe" method="POST" class="wow fadeInUp" data-wow-delay="0.25s">
             <div class="row">
+                <div class="form-group col-md-6 mb-4">
+                    <input type="text" name="fname" class="form-control" id="fname" placeholder="نام" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group col-md-6 mb-4">
+                    <input type="text" name="lname" class="form-control" id="lname" placeholder="نام خانوادگی" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group col-md-12 mb-4">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="آدرس ایمیل" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+                
+                <div class="form-group col-md-12 mb-4">
+                    <input type="text" name="phone" class="form-control" id="phone" placeholder="شماره تماس" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group col-md-6 mb-4">
+                    <select name="services" class="form-control form-select" id="services" required>
+                        <option value="" disabled selected>انتخاب خدمت</option>
+                        <option value="manual_therapy">مشاوره فردی</option>
+                        <option value="chronic_pain">مشاوره حمایتی زوجین</option>
+                        <option value="hand_therapy">مشاوره نوجوان و جوان</option>
+                        <option value="sports_therapy">حمایت اضطراب و افسردگی</option>
+                        <option value="cupping_therapy">مدیریت خشم و استرس</option>
+                        <option value="laser_therapy">تمرینات ذهنی و مدیتیشن</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group col-md-6 mb-5">
+                    <input type="date" name="date" class="form-control" id="date" required>
+                    <div class="help-block with-errors"></div>
+                </div>
+
                 <div class="col-lg-12">
-                         <!-- Our Appointment Content Start -->
+                    <div class="contact-form-btn">
+                        <button type="submit" class="btn-default">رزرو نوبت</button>
+                        <div id="msgSubmit" class="h3 hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- Contact Us Form End -->
+                        </div>
+                        <!-- Appointment Form Start -->
+
+                        <!-- Our Appointment Content Start -->
                         <div class="our-appointment-content">
                             <!-- Section Title Start -->
                             <div class="section-title">
